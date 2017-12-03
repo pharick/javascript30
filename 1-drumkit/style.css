@@ -15,6 +15,7 @@ body {
 
 .drumkit__item {
   text-align: center;
+  background-color: transparent;
   border: 2px solid white;
   border-radius: .5em;
   width: 90px;
@@ -22,6 +23,10 @@ body {
   margin: 10px;
   color: crimson;
   transition: all .1s;
+}
+
+.drumkit__item:hover {
+  border-color: yellow;
 }
 
 .drumkit__key {
@@ -35,6 +40,7 @@ body {
 }
 
 .drumkit__item_pressed {
-  border-color: orange;
+  color: yellow;
+  border-color: yellow;
   transform: scale(1.05);
 }
