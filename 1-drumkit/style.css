@@ -19,7 +19,7 @@ body {
   margin: 0 0.5em;
   color: orangered;
   font-weight: bold;
-  transition: all .2s;
+  transition: all .1s;
 }
 
 .drumkit__key {
