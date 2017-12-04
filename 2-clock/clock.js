@@ -1,7 +1,3 @@
-const secondsHand = document.querySelector('.clock__hand_seconds');
-const minutesHand = document.querySelector('.clock__hand_minutes');
-const hoursHand = document.querySelector('.clock__hand_hours');
-
 function getTimeDegrees() {
   const now = new Date();
 
@@ -22,10 +18,14 @@ function getTimeDegrees() {
 
 function setTime() {
   const degrees = getTimeDegrees();
-  
+
   secondsHand.style.transform = `rotate(${degrees.seconds}deg)`;
   minutesHand.style.transform = `rotate(${degrees.minutes}deg)`;
   hoursHand.style.transform = `rotate(${degrees.hours}deg)`;
 }
+
+const secondsHand = document.querySelector('.clock__hand_seconds');
+const minutesHand = document.querySelector('.clock__hand_minutes');
+const hoursHand = document.querySelector('.clock__hand_hours');
 
 setInterval(setTime, 1000);
