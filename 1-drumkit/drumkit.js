@@ -23,16 +23,8 @@ window.addEventListener('keydown', function(e) {
 var drumkit = document.querySelector('.drumkit');
 
 drumkit.addEventListener('click', function(e) {
-  var target = e.target;
-
-  while (target != drumkit) {
-    if (target.classList.contains('drumkit__item')) {
-      playSound(target.dataset.key);
-      pickUpItem(target.dataset.key);
-      return;
-    }
-    target = target.parentNode;
-  }
+  playSound(e.target.dataset.key);
+  pickUpItem(e.target.dataset.key);
 });
 
 drumkit.addEventListener('transitionend', pickDownItem);
