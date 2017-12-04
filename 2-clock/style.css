@@ -8,23 +8,22 @@
 }
 
 .clock__hand {
-  width: 130px;
-  left: 20px;
   background-color: black;
-  height: 4px;
+  width: 4px;
+  height: 130px;
   position: absolute;
-  top: 50%;
-  transform-origin: right;
-  transform: rotate(90deg);
+  left: 50%;
+  top: 20px;
+  transform-origin: bottom;
   transition: all .05s;
   transition-timing-function: cubic-bezier(.18,.89,.32,1.28);
 }
 
 .clock__hand_hours {
-  width: 100px;
-  left: 50px;
+  height: 100px;
+  top: 50px;
 }
 
 .clock__hand_seconds {
-  height: 2px;
+  width: 2px;
 }
