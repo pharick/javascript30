@@ -2,6 +2,12 @@
   --blur: 0px;
   --brightness: 100%;
   --contrast: 100%;
+  --grayscale: 0%;
+  --hue-rotate: 0deg;
+  --invert: 0%;
+  --opacity: 100%;
+  --saturate: 100%;
+  --color: #3d7bce;
 }
 
 body {
@@ -9,10 +15,12 @@ body {
     "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
+    padding-bottom: 100px;
 }
 
 .header {
   text-align: center;
+  color: var(--color);
 }
 
 .picture {
@@ -20,7 +28,13 @@ body {
   margin: 0 auto;
   filter: blur(var(--blur))
           brightness(var(--brightness))
-          contrast(var(--contrast));
+          contrast(var(--contrast))
+          grayscale(var(--grayscale))
+          hue-rotate(var(--hue-rotate))
+          invert(var(--invert))
+          opacity(var(--opacity))
+          saturate(var(--saturate));
+  box-shadow: 20px 20px var(--color);
 }
 
 .controls {
@@ -31,10 +45,6 @@ body {
   padding: 0;
   max-width: 400px;
   margin: 1em auto;
-}
-
-.control {
-
 }
 
 .controls__label {
