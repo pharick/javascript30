@@ -11,7 +11,13 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+.header {
+  text-align: center;
+}
+
 .picture {
+  display: block;
+  margin: 0 auto;
   filter: blur(var(--blur))
           brightness(var(--brightness))
           contrast(var(--contrast));
@@ -19,6 +25,19 @@ body {
 
 .controls {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
+  max-width: 400px;
+  margin: 1em auto;
+}
+
+.control {
+
+}
+
+.controls__label {
+  display: block;
+  text-align: center;
 }
