@@ -1,0 +1,24 @@
+:root {
+  --blur: 0px;
+  --brightness: 100%;
+  --contrast: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.picture {
+  filter: blur(var(--blur))
+          brightness(var(--brightness))
+          contrast(var(--contrast));
+}
+
+.controls {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
