@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
+body {
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  height: 100vh;
+  font-family: 'Passion One', cursive;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.gallery__item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  transition: flex-grow 1s;
+}
+
+.gallery__item > * {
+  flex-grow: 1;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: font-size 1s,
+              transform 1s;
+}
+
+.gallery__item p:first-child {
+  transform: translateY(-100%);
+}
+
+.gallery__item p:last-child {
+  transform: translateY(100%);
+}
+
+.gallery__item_opened {
+  flex-grow: 2;
+}
+
+.gallery__item_opened p:first-child {
+  transform: translateY(0);
+}
+
+.gallery__item_opened p:last-child {
+  transform: translateY(0);
+}
+
+.gallery__item_opened p:nth-child(2) {
+  font-size: 1.8em;
+}
+
+.gallery__item_1 {
+  background-image: url(img/1.jpg);
+}
+
+.gallery__item_2 {
+  background-image: url(img/2.jpg);
+}
+
+.gallery__item_3 {
+  background-image: url(img/3.jpg);
+}
+
+.gallery__item_4 {
+  background-image: url(img/4.jpg);
+}
+
+.gallery__item_5 {
+  background-image: url(img/5.jpg);
+}
