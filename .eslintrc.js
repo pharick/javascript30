@@ -18,7 +18,11 @@ module.exports = {
     "rules": {
         "indent": [
             "error",
+<<<<<<< HEAD
             2
+=======
+            4
+>>>>>>> f5df43eec93917ee0ad1f0bffded0f92d5d71c1c
         ],
         "linebreak-style": [
             "error",
@@ -33,4 +37,8 @@ module.exports = {
             "always"
         ]
     }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> f5df43eec93917ee0ad1f0bffded0f92d5d71c1c
