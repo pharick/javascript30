@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dev tools</title>
+  </head>
+  <body>
+    <p id="p" onClick="makeColor()" style="font-size: 2em;">Make color</p>
+
+    <script>
+      const dogs = [{ name: 'Snickers', age: 2 }, { name: 'Hugo', age: 8 }];
+
+      const p = document.getElementById('p');
+
+      function makeColor() {
+        p.style.color = 'red';
+      }
+
+
+      // Regular
+      console.log('Hello');
+
+      // Interpolated
+      console.log('Hello, my name is %s.', 'Artem');
+
+      // Styled
+      console.log('%cStyled text', 'font-size: 2em; color: blue; text-decoration: underline;');
+
+      // Warning
+      console.warn('Warning!');
+
+      // Error
+      console.error('Error!');
+
+      // Info
+      console.info('Information');
+
+      // Testing
+      console.assert(1 == 2, 'Wrong!');
+
+      // Clearing
+      console.clear();
+
+      // Viewing DOM elements
+      console.dir(p);
+      console.clear();
+
+      // Grouping
+      dogs.forEach(dog => {
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`Name is ${dog.name}.`);
+        console.log(`${dog.name} is ${dog.age} years old.`);
+        console.groupEnd(`${dog.name}`);
+      });
+
+      // Counting
+      console.count('Christmas');
+      console.count('New Year!');
+      console.count('New Year!');
+      console.count('New Year!');
+      console.count('Christmas');
+      console.count('New Year!');
+      console.count('New Year!');
+
+      // Timing
+      console.time('Fetch data');
+      fetch('https://api.github.com/users/pharick')
+        .then(data => data.json())
+        .then(data => {
+          console.dir(data);
+          console.timeEnd('Fetch data');
+        });
+
+        // Table
+        console.table(dogs);
+
+    </script>
+  </body>
+</html>
