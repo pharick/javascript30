@@ -1,0 +1,45 @@
+.player {
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+.player__video {
+  width: 100%;
+}
+
+.player__controls {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%) translateY(-5px);
+  transition: transform 0.3s;
+  padding-bottom: 5px;
+}
+
+.player__controls > * {
+  flex: 1;
+  margin-bottom: 5px;
+}
+
+.player:hover .player__controls {
+  transform: translateY(0);
+}
+
+.progress {
+  height: 15px;
+  flex: 10;
+  flex-basis: 100%;
+}
+
+.player__button {
+  max-width: 50px;
+  background: none;
+  border: 0;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
