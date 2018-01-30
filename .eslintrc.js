@@ -13,7 +13,6 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
     ],
     "rules": {
         "indent": [

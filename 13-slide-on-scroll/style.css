@@ -1,0 +1,36 @@
+body {
+  width: 600px;
+  margin: 10px auto;
+}
+
+p {
+  text-align: justify;
+}
+
+.left {
+  float: left;
+  margin-right: 20px;
+}
+
+.right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all, .5s;
+}
+
+.left.slide-in {
+  transform: translateX(-100px);
+}
+
+.right.slide-in {
+  transform: translateX(100px);
+}
+
+.slide-in.active {
+  transform: translateX(0);
+  opacity: 1;
+}
